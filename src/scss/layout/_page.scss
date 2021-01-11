@@ -1,7 +1,13 @@
 body {
-  padding: 2rem;
-  height: 100vh;
-  background-image: url('../images/bg-adalab.png');
-  background-color: $color-bg;
-  font-family: $font-main;
+  list-style-type: none;
+}
+
+.pageContainer {
+  margin: 0 $standard-px;
+  @include tablet {
+    margin: 0 39px;
+  }
+  @include desktop {
+    margin: 0 85px;
+  }
 }
