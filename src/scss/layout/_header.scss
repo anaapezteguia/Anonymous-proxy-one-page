@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0271bc;
+    background-color: $color-medium-dark;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,9 +40,6 @@
       color: $color-light;
       text-align: center;
       margin: 284px 0 10px 0;
-      & .break {
-        display: block;
-      }
     }
     &--text {
       font-family: $mainText;

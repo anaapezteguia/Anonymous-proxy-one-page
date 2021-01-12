@@ -1,4 +1,4 @@
-.pageContainer {
+.wrapper {
   margin: 0 $standard-px;
   @include tablet {
     margin: 0 39px;
@@ -6,4 +6,7 @@
   @include desktop {
     margin: 0 85px;
   }
+}
+.break {
+  display: block;
 }

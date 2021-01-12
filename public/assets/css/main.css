@@ -7,14 +7,17 @@
 .footer__links--sections:hover {
   color: #f26002; }
 
-.pageContainer {
+.wrapper {
   margin: 0 15px; }
   @media all and (min-width: 768px) {
-    .pageContainer {
+    .wrapper {
       margin: 0 39px; } }
   @media all and (min-width: 1280px) {
-    .pageContainer {
+    .wrapper {
       margin: 0 85px; } }
+
+.break {
+  display: block; }
 
 .hero {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 25%, black 100%), url(../images/cover.jpg);
@@ -51,8 +54,6 @@
       color: white;
       text-align: center;
       margin: 284px 0 10px 0; }
-      .hero__content--title .break {
-        display: block; }
     .hero__content--text {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -103,14 +104,49 @@
       align-items: center;
       margin: 30px 0 13px 0; } }
 
-.main {
-  height: 100vh; }
+.main__featured {
+  margin: 30px 0 45px;
+  /*30px 0 45px*/
+  line-height: 30px; }
   .main__featured--section {
-    color: #8ccbea;
     text-transform: capitalize;
+    line-height: 30px;
+    color: #8ccbea;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px; }
+  .main__featured--title {
+    text-transform: capitalize;
+    line-height: 30px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 24px; }
+  .main__featured--abstract {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin: 15px 0 30px; }
+  .main__featured--link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f26002;
+    text-decoration: none;
+    padding: 10px 25px 10px 26px;
+    border: 2px solid #f26002;
+    border-radius: 25px;
+    background-color: white;
+    transition: color ease 0.4s, border-color ease 0.4s; }
+    .main__featured--link:hover {
+      color: #304268;
+      border: 2px solid #304268;
+      background-color: #8ccbea; }
+
+.main__reasons {
+  margin: 30px 0 60px;
+  /*30px 0 60px*/
+  background-color: #eff9ff; }
 
 .footer {
   position: fixed;
