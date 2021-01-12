@@ -1,57 +1,83 @@
   <footer class="footer">
+    <div class="footer__anchor">
+      <a href="#" class="footer__anchor--link"  alt="volver arriba"  title="volver arriba">
+        <img src="./assets/images/ico-arrow.svg" alt="volver arriba">
+      </a>
+    </div>
     <div class="pageContainer">
-      <div class="footer__anchor">
-        <a href="#" class="footer__anchor--link"  alt="volver arriba"  title="volver arriba">
-          <img src="./assets/images/ico-arrow.svg" alt="volver arriba">
-        </a>
-      </div>
       <small class="footer__copyright">
         ©2021
         <span class="footer__copyright--brand">we <i class="fas fa-heart"></i> components</span>
       </small>
-      <nav>
-        <ul class="sections">
+      <nav class="sections">
+        <ul>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--sections" target="_blank">
-              Articles
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--sections"
+            url="https://adalab.es/"
+            text="Articles"
+            ></include>
           </li>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--sections" target="_blank">
-              Books
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--sections"
+            url="https://adalab.es/"
+            text="Books"
+            ></include>
           </li>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--sections" target="_blank">
-              Events
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--sections"
+            url="https://adalab.es/"
+            text="Events"
+            ></include>
           </li>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--sections" target="_blank">
-              Reasons
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--sections"
+            url="https://adalab.es/"
+            text="Reasons"
+            ></include>
           </li>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--sections" target="_blank">
-              Tips
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--sections"
+            url="https://adalab.es/"
+            text="Tips"
+            ></include>
           </li>
         </ul>
-        <ul class="social">
+      </nav>
+      <nav class="social">
+        <ul>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--social" target="_blank">
-              Twitter
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--social"
+            url="https://adalab.es/"
+            text="Twitter"
+            ></include>
           </li>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--social" target="_blank">
-              Instagram
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--social"
+            url="https://adalab.es/"
+            text="Instagram"
+            ></include>
           </li>
           <li class="footer__links">
-            <a href="https://adalab.es/" class="footer__links--social" target="_blank">
-              Mastodon.social
-            </a>
+            <include 
+            src="link.html"
+            aClass="footer__links--social"
+            url="https://adalab.es/"
+            text="Mastodon.social"
+            ></include>
           </li>
         </ul>
       </nav>

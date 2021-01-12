@@ -1,41 +1,50 @@
 .footer {
-  height: 465px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $color-bg-footer;
   font-family: $mainText;
   font-weight: $fontWeight-normal;
   line-height: 2 * $standard-px;
+  &__anchor {
+    position: relative;
+    top: -22px;
+    width: 3 * $standard-px;
+    height: 3 * $standard-px;
+    background-color: $color-light;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--link {
+      margin-top: 8px;
+    }
+  }
   & .pageContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  &__anchor {
-    position: relative;
-    top: -24px;
-    width: 3 * $standard-px;
-    height: 3 * $standard-px;
-    background-color: $color-light;
-    border-radius: 50%;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-    &--link {
-      position: relative;
-      top: 11px;
-      left: 0;
-    }
-  }
   &__copyright {
     color: $color-light;
     margin-top: 2 * $standard-px;
+    width: 210px;
     &--brand {
       display: block;
     }
   }
   .sections {
     margin-top: 2 * $standard-px;
+    width: 210px;
   }
   .social {
     margin-top: 2 * $standard-px;
+    width: 210px;
   }
   &__links {
     list-style-type: none;
@@ -48,5 +57,13 @@
   }
   & .fas.fa-heart {
     color: $color-secondary;
+  }
+  @include tablet {
+    & .pageContainer {
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 }
