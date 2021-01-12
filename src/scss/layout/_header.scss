@@ -8,6 +8,7 @@
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center; /*center img on website*/
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@
     }
     &--text {
       font-family: $mainText;
-      font-weight: $fontWeight-normal;
+      font-weight: $fontWeight-regular;
       font-size: $fontSize-small;
       color: $color-light;
       text-align: center;
