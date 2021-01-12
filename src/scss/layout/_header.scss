@@ -59,6 +59,9 @@
       font-size: 80px;
       line-height: 106px;
       margin: 384px 0 20px 0;
+      & .break {
+        display: block;
+      }
     }
     &__content--text {
       font-size: $fontSize-medium;
@@ -75,6 +78,9 @@
       line-height: 132px;
       margin: 384px 0 0 0;
       text-shadow: 0 2px 5px rgb(0, 0, 0);
+      & .break {
+        display: block;
+      }
     }
     &__content--icon {
       @include icon {

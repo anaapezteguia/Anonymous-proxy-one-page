@@ -9,4 +9,10 @@
 }
 .break {
   display: block;
+  @include tablet {
+    display: inline;
+  }
+  @include desktop {
+    display: inline;
+  }
 }
