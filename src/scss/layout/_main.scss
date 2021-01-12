@@ -75,46 +75,91 @@
     width: 100%;
     line-height: 2 * $standard-px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &--title {
       font-family: $titleText;
       font-weight: $fontWeight-bold;
       font-size: $fontSize-medium;
       text-transform: capitalize;
       margin-bottom: 3 * $standard-px;
+      @include tablet {
+        font-size: 26px;
+      }
+      @include desktop {
+        font-size: 32px;
+      }
     }
     &--subtitle {
       font-family: $titleText;
       font-weight: $fontWeight-bold;
       font-size: $fontSize-regular;
+      @include tablet {
+        font-size: $fontSize-medium;
+        margin-bottom: 14px;
+      }
     }
     &--text {
       font-family: $mainText;
       font-weight: $fontWeight-regular;
       font-size: $fontSize-regular;
-    }
-    &--link {
-      font-family: $mainText;
-      font-weight: $fontWeight-regular;
-      font-size: 20px;
-      color: $color-light;
-      text-decoration: none;
-      display: inline-block;
-      padding: 10px 29.5px 10px 30.5px;
-      border-radius: 25px;
-      background-color: $color-secondary;
-      transition: color ease 0.4s, border-color ease 0.4s;
-      margin-top: 3 * $standard-px;
-      &:hover {
-        color: $color-medium;
-        background-color: $color-dark;
+      @include tablet {
+        font-size: 20px;
       }
     }
-    .wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat (3, 1fr);
-      grid-row-gap: 3 * $standard-px;
-      margin: 0 68px;
+    @include desktop {
+      padding: 4 * $standard-px 0; /*60px 0*/
     }
+  }
+}
+.reasons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 3 * $standard-px;
+  margin: 0 70px;
+  &__item1,
+  &__item2,
+  &__item3 {
+    grid-column: span 3;
+  }
+  @include tablet {
+    grid-column-gap: 27.7px;
+    margin: 0 40px;
+    &__item1,
+    &__item2,
+    &__item3 {
+      grid-column: span 1;
+      grid-row: span 3;
+    }
+  }
+  @include desktop {
+    grid-template-columns: 350px 350px 350px;
+    margin: 0 85px;
+  }
+}
+.reasons-link {
+  font-family: $mainText;
+  font-weight: $fontWeight-regular;
+  font-size: 20px;
+  color: $color-light;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 29.5px 10px 30.5px;
+  border-radius: 25px;
+  background-color: $color-secondary;
+  transition: color ease 0.4s, border-color ease 0.4s;
+  margin-top: 20px;
+  &:hover {
+    color: $color-medium;
+    background-color: $color-dark;
+  }
+  @include tablet {
+    margin-top: 4 * $standard-px;
+    padding: 10px 42.5px 10px 43.5px;
+  }
+  @include desktop {
+    padding: 10px 62px 10px 63px;
   }
 }
