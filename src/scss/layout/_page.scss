@@ -1,7 +1,6 @@
-body {
-  list-style-type: none;
+.main {
+  height: 100vh;
 }
-
 .pageContainer {
   margin: 0 $standard-px;
   @include tablet {

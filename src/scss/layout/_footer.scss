@@ -11,16 +11,10 @@
   font-weight: $fontWeight-normal;
   line-height: 2 * $standard-px;
   &__anchor {
-    position: relative;
-    top: -22px;
-    width: 3 * $standard-px;
-    height: 3 * $standard-px;
-    background-color: $color-light;
-    border-radius: 50%;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include icon {
+      position: relative;
+      top: -22px;
+    }
     &--link {
       margin-top: 8px;
     }

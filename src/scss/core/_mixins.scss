@@ -9,3 +9,15 @@
     @content;
   }
 }
+
+@mixin icon {
+  width: 3 * $standard-px;
+  height: 3 * $standard-px;
+  background-color: $color-light;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
