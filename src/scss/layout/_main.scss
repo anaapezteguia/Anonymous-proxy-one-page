@@ -1,0 +1,12 @@
+.main {
+  height: 100vh;
+  &__featured {
+    &--section {
+      color: #8ccbea;
+      text-transform: capitalize;
+      font-family: $mainText;
+      font-weight: $fontWeight-normal;
+      font-size: $fontSize-xSmall;
+    }
+  }
+}

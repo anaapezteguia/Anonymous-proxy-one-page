@@ -33,7 +33,7 @@
     &--title {
       font-family: $titleText;
       font-weight: $fontWeight-bold;
-      font-size: 42px;
+      font-size: $fontSize-big;
       line-height: 55px;
       text-transform: uppercase;
       text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -47,7 +47,7 @@
     &--text {
       font-family: $mainText;
       font-weight: $fontWeight-normal;
-      font-size: 16px;
+      font-size: $fontSize-small;
       color: $color-light;
       text-align: center;
     }
@@ -64,7 +64,7 @@
       margin: 384px 0 20px 0;
     }
     &__content--text {
-      font-size: 24px;
+      font-size: $fontSize-medium;
     }
     &__content--icon {
       @include icon {

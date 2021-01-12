@@ -7,9 +7,6 @@
 .footer__links--sections:hover {
   color: #f26002; }
 
-.main {
-  height: 100vh; }
-
 .pageContainer {
   margin: 0 15px; }
   @media all and (min-width: 768px) {
@@ -106,6 +103,15 @@
       align-items: center;
       margin: 30px 0 13px 0; } }
 
+.main {
+  height: 100vh; }
+  .main__featured--section {
+    color: #8ccbea;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px; }
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -162,9 +168,5 @@
       text-align: left;
       justify-content: space-between;
       width: 100%; } }
-
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
