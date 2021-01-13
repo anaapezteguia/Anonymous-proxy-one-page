@@ -151,7 +151,7 @@
   border-radius: 25px;
   background-color: $color-secondary;
   transition: color ease 0.4s, border-color ease 0.4s;
-  margin-top: 20px;
+  margin-top: 3 * $standard-px;
   &:hover {
     color: $color-medium;
     background-color: $color-dark;

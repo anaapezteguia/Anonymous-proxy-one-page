@@ -4,17 +4,6 @@
   font-family: $mainText;
   font-weight: $fontWeight-regular;
   line-height: 2 * $standard-px;
-  &__anchor {
-    @include icon {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    &--link {
-      margin-top: 8px;
-    }
-  }
   & .wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -32,15 +21,36 @@
       margin: 0 370px;
     }
   }
+  &__anchor {
+    @include icon {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--link {
+      margin-top: 8px;
+    }
+  }
   &__copyright {
     color: $color-light;
     font-size: $fontSize-xSmall;
     margin-top: 2 * $standard-px;
+    @include tablet {
+      width: 33%;
+    }
     &--brand {
       display: block;
     }
     & .fas.fa-heart {
       color: $color-secondary;
+    }
+  }
+  &__menu {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      width: 55%; /*fake centering*/
     }
   }
   .sections,

@@ -26,7 +26,7 @@
   color: #f26002; }
 
 .hero {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 25%, black 100%), url(../images/cover.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 25%, rgba(0, 0, 0, 0.5) 100%), url(../images/cover.jpg);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
@@ -247,7 +247,7 @@
   border-radius: 25px;
   background-color: #f26002;
   transition: color ease 0.4s, border-color ease 0.4s;
-  margin-top: 20px; }
+  margin-top: 45px; }
   .reasons-link:hover {
     color: #8ccbea;
     background-color: #304268; }
@@ -265,21 +265,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 30px; }
-  .footer__anchor {
-    width: 45px;
-    height: 45px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .footer__anchor--link {
-      margin-top: 8px; }
   .footer .wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -296,14 +281,38 @@
     @media all and (min-width: 1280px) {
       .footer .wrapper {
         margin: 0 370px; } }
+  .footer__anchor {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .footer__anchor--link {
+      margin-top: 8px; }
   .footer__copyright {
     color: white;
     font-size: 14px;
     margin-top: 30px; }
+    @media all and (min-width: 768px) {
+      .footer__copyright {
+        width: 33%; } }
     .footer__copyright--brand {
       display: block; }
     .footer__copyright .fas.fa-heart {
       color: #f26002; }
+  @media all and (min-width: 768px) {
+    .footer__menu {
+      display: flex;
+      justify-content: space-between;
+      width: 55%;
+      /*fake centering*/ } }
   .footer .sections,
   .footer .social {
     margin-top: 30px; }
