@@ -27,6 +27,9 @@
       top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out; /*softer effect*/
     }
     &--link {
       margin-top: 8px;
@@ -66,5 +69,20 @@
       text-decoration: none;
       font-size: $fontSize-small;
     }
+  }
+}
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: linear;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%); /*start*/
+  }
+  50% {
+    transform: translate(-50%, -35%); /*translate Y axis ONLY*/
+  }
+  100% {
+    transform: translate(-50%, -50%); /*finish*/
   }
 }

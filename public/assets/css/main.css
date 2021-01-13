@@ -293,7 +293,14 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    /*softer effect*/ }
     .footer__anchor--link {
       margin-top: 8px; }
   .footer__copyright {
@@ -323,5 +330,33 @@
       text-transform: uppercase;
       text-decoration: none;
       font-size: 16px; }
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%);
+    /*start*/ }
+  50% {
+    transform: translate(-50%, -35%);
+    /*translate Y axis ONLY*/ }
+  100% {
+    transform: translate(-50%, -50%);
+    /*finish*/ } }
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%);
+    /*start*/ }
+  50% {
+    transform: translate(-50%, -35%);
+    /*translate Y axis ONLY*/ }
+  100% {
+    transform: translate(-50%, -50%);
+    /*finish*/ } }
 
 /*# sourceMappingURL=main.css.map */
