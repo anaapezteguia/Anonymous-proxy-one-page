@@ -14,5 +14,3 @@ Este ejercicio está realizado con una base de código preparada por los docente
 - SASS (variables, nesting, partials, motor de plantillas...)
 
 Saludos :)
-
-! [ana-am.es] (http://www.ana-am.es/wp-content/uploads/logo_black.png)
