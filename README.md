@@ -1,5 +1,4 @@
 ![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
-[ana-am.es](http://www.ana-am.es/wp-content/uploads/logo_black.png)
 
 # Evaluación final módulo 1
 
