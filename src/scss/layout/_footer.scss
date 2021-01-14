@@ -23,6 +23,7 @@
   }
   &__anchor {
     @include icon {
+      display: none;
       position: absolute;
       top: 0;
       left: 50%;
@@ -30,6 +31,9 @@
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out; /*softer effect*/
+    }
+    @include tablet {
+      display: flex;
     }
     &--link {
       margin-top: 8px;
@@ -40,6 +44,8 @@
     font-size: $fontSize-xSmall;
     margin-top: 2 * $standard-px;
     @include tablet {
+      display: flex;
+      flex-direction: column-reverse;
       width: 33%;
     }
     &--brand {

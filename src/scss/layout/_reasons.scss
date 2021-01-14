@@ -73,20 +73,22 @@
   font-family: $mainText;
   font-weight: $fontWeight-regular;
   font-size: 20px;
-  color: $color-light;
+  color: $color-secondary;
   text-decoration: none;
   display: inline-block;
   padding: 10px 29.5px 10px 30.5px;
   border-radius: 25px;
-  background-color: $color-secondary;
+  background-color: $color-light;
+  border: 2px solid $color-secondary;
   transition: color ease 0.4s, border-color ease 0.4s;
-  margin-top: 3 * $standard-px;
+  margin-top: 65px;
+
   &:hover {
     color: $color-medium;
     background-color: $color-dark;
   }
   @include tablet {
-    margin-top: 4 * $standard-px;
+    margin-top: 3 * $standard-px;
     padding: 10px 42.5px 10px 43.5px;
   }
   @include desktop {

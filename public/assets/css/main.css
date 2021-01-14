@@ -241,20 +241,21 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: white;
+  color: #f26002;
   text-decoration: none;
   display: inline-block;
   padding: 10px 29.5px 10px 30.5px;
   border-radius: 25px;
-  background-color: #f26002;
+  background-color: white;
+  border: 2px solid #f26002;
   transition: color ease 0.4s, border-color ease 0.4s;
-  margin-top: 45px; }
+  margin-top: 65px; }
   .reasons-link:hover {
     color: #8ccbea;
     background-color: #304268; }
   @media all and (min-width: 768px) {
     .reasons-link {
-      margin-top: 60px;
+      margin-top: 45px;
       padding: 10px 42.5px 10px 43.5px; } }
   @media all and (min-width: 1280px) {
     .reasons-link {
@@ -291,6 +292,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
     position: absolute;
     top: 0;
     left: 50%;
@@ -302,6 +304,9 @@
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     /*softer effect*/ }
+    @media all and (min-width: 768px) {
+      .footer__anchor {
+        display: flex; } }
     .footer__anchor--link {
       margin-top: 8px; }
   .footer__copyright {
@@ -310,6 +315,8 @@
     margin-top: 30px; }
     @media all and (min-width: 768px) {
       .footer__copyright {
+        display: flex;
+        flex-direction: column-reverse;
         width: 33%; } }
     .footer__copyright--brand {
       display: block; }
