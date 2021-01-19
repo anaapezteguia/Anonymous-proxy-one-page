@@ -6,7 +6,7 @@
   line-height: 2 * $standard-px;
   & .wrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column; /*column-reverse*/
     align-items: center;
     text-align: center;
     padding: 4 * $standard-px 0 3 * $standard-px;
@@ -36,10 +36,12 @@
     }
   }
   &__copyright {
+    order: 2;
     color: $color-light;
     font-size: $fontSize-xSmall;
     margin-top: 2 * $standard-px;
     @include tablet {
+      order: 1;
       width: 33%;
     }
     &--brand {
@@ -50,7 +52,9 @@
     }
   }
   &__menu {
+    order: 1;
     @include tablet {
+      order: 2;
       display: flex;
       justify-content: space-between;
       width: 55%; /*fake centering*/

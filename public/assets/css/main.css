@@ -268,7 +268,8 @@
   line-height: 30px; }
   .footer .wrapper {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    /*column-reverse*/
     align-items: center;
     text-align: center;
     padding: 60px 0 45px; }
@@ -305,22 +306,27 @@
     .footer__anchor--link {
       margin-top: 8px; }
   .footer__copyright {
+    order: 2;
     color: white;
     font-size: 14px;
     margin-top: 30px; }
     @media all and (min-width: 768px) {
       .footer__copyright {
+        order: 1;
         width: 33%; } }
     .footer__copyright--brand {
       display: block; }
     .footer__copyright .fas.fa-heart {
       color: #f26002; }
-  @media all and (min-width: 768px) {
-    .footer__menu {
-      display: flex;
-      justify-content: space-between;
-      width: 55%;
-      /*fake centering*/ } }
+  .footer__menu {
+    order: 1; }
+    @media all and (min-width: 768px) {
+      .footer__menu {
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        /*fake centering*/ } }
   .footer .sections,
   .footer .social {
     margin-top: 30px; }
